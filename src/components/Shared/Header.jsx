@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { ContextProvider } from '../AuthProvider';
-
+import img from '../../../public/download.png';
 const Header = () => {
     const [open, setOpen] = useState(false);
     const {user, logoutUser} = useContext(ContextProvider);
@@ -18,7 +18,7 @@ const Header = () => {
     }
     return (
         <div className='flex justify-between py-6 px-12 pe-24 bg-gradient-to-t from-red-50 to-red-400'>
-            <p><img className='w-20 rounded-full inline-flex' src="../../../public/download.png" alt="" />
+            <p><img className='w-20 rounded-full inline-flex' src={img} alt="" />
                 <span className='text-3xl text-red-950 font-bold ms-2'>Alliance</span></p>
 
             <nav>
