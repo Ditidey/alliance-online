@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ .container{
+    @apply mx-24 my-10 p-5
+ }
